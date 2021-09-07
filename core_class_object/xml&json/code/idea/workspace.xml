@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="59174b98-cd82-43bf-b83f-15cf14b09748" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1d708j085397fMqj4Eg3j3LwQbo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/gson-2.8.6.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.java.demo2" />
+      <recent name="com.java.demo1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cdd\IdeaProjects\XML_JSONDemo\lib" />
+      <recent name="C:\Users\cdd\IdeaProjects\XML_JSONDemo\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Demo6">
+    <configuration name="Demo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.demo2.Demo1" />
+      <module name="XML_JSONDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.demo2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.demo2.Demo3" />
+      <module name="XML_JSONDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.demo2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.demo2.Demo4" />
+      <module name="XML_JSONDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.demo2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.demo2.Demo5" />
+      <module name="XML_JSONDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.demo2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.demo2.Demo6" />
+      <module name="XML_JSONDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.demo2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Demo6" />
+        <item itemvalue="Application.Demo5" />
+        <item itemvalue="Application.Demo4" />
+        <item itemvalue="Application.Demo3" />
+        <item itemvalue="Application.Demo1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59174b98-cd82-43bf-b83f-15cf14b09748" name="Default Changelist" comment="" />
+      <created>1591760666898</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591760666898</updated>
+      <workItem from="1591760668207" duration="4299000" />
+      <workItem from="1591856649033" duration="5319000" />
+      <workItem from="1591949502711" duration="23000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2685" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1591880162821">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2685" y="223" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591880162821" />
+    <state x="2689" y="242" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1591779864183">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2689" y="242" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591779864183" />
+    <state x="2464" y="417" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1591779986815">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2464" y="417" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591779986815" />
+    <state x="2636" y="443" key="DetectedRootsChooserDialog" timestamp="1591779958357">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2636" y="443" key="DetectedRootsChooserDialog/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591779958357" />
+    <state x="2533" y="289" key="FileChooserDialogImpl" timestamp="1591880070882">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2533" y="289" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591880070882" />
+    <state width="1876" height="334" key="GridCell.Tab.0.bottom" timestamp="1591881115067">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="334" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591881115067" />
+    <state width="1876" height="334" key="GridCell.Tab.0.center" timestamp="1591881115067">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="334" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591881115067" />
+    <state width="1876" height="334" key="GridCell.Tab.0.left" timestamp="1591881115067">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="334" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591881115067" />
+    <state width="1876" height="334" key="GridCell.Tab.0.right" timestamp="1591881115067">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="334" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591881115067" />
+    <state x="2360" y="113" key="SettingsEditor" timestamp="1591880072732">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2360" y="113" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591880072732" />
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1591780390529">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591780390529" />
+  </component>
+</project>
