@@ -1,0 +1,10 @@
+1、创建数据库表 airinfo，添加测试数据不少于 4 条。要求主键自增
+2、创建实体类 AirInfo，根据业务提供需要的构造方法和 setter/getter
+方法。
+3、创建 BaseDao 类，实现数据库连接和关闭功能。
+4、创建 DAO 接口 AirInfoDao，定义查询所有航班，按日期和目的地查
+询航班，删除航班，更新航班的方法。
+5、创建DAO实现类AirInfoDaoImpl，继承BaseDao类，实现AirInfoDao
+接口，使用 JDBC 完成相应数据库操作。
+6、创建 Main 类，完成在控制台显示留言信息和用户添加留言操作，启动
+和运行系统
