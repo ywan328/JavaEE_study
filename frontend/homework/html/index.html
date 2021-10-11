@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<script src="js/jquery-1.11.1.js"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/checkFormByJQuery.js" type="text/javascript" charset="utf-8"></script>
+		<title>程序创新大会报名</title>
+	</head>
+
+	<body>
+
+		<!-- 顶部背景图start-->
+		<div id="" class="top-bg-img">
+			<a name="top"></a>
+			<!--标题部分start-->
+			<div id="" class="logo">
+				<h3>欢迎进入程序创新大会报名</h3>
+			</div>
+			<!--标题部分end-->
+			<!--时间start-->
+			<div id="" class="timer">
+				<span id="time">
+
+				</span>
+			</div>
+			<!--时间end-->
+		</div>
+		<!-- 顶部背景图end-->
+		<!--导航start-->
+		<div id="" class="nav-bg">
+			<div id="" class="nav">
+				<div id="" class="top-menu">
+					<ul class="top-ul">
+						<li><a href="#">首页</a></li>
+						<li><a href="#">科学普及</a></li>
+						<li><a href="#">院士专家</a></li>
+						<li><a href="#">学会工作</a></li>
+						<li><a href="#">青少年</a></li>
+						<li class="dropdown">
+							<a href="rank.html" class="dropdown-toggle" data-toggle="dropdown">
+								往届比赛结果<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="rank.html">2021</a></li>
+								<li><a href="#">2020</a></li>
+								<li><a href="#">2019</a></li>
+								<li class="divider"></li>
+								<li><a href="#">2018</a></li>
+							</ul>
+						</li>
+						<li><a href="#">创新创业</a></li>
+					</ul>
+				</div>
+				<div id="" class="top-search" align="right">
+					<input class="search" type="text" name="" id="" value="" placeholder="请输入搜索内容" />
+					<span class="glyphicon glyphicon-search"></span>
+				</div>
+			</div>
+		</div>
+		<!--导航end-->
+		<!--当前位置start-->
+		<div id="" class="where clear">
+			当前位置：首页&emsp;>&emsp;程序创新大赛&emsp;>&emsp;报名入口
+		</div>
+		<!--当前位置end-->
+		<!--注册信息界面start-->
+		<div id="" class="gather-info-frame">
+			<!--标题栏start-->
+			<div id="" class="top-frame">
+				<a href="introduce.html" target="details">大会流程</a>
+				<div id="" class="info-title">
+					请填写报名信息报名
+				</div>
+			</div>
+			<!--标题栏end-->
+			<!--左侧start-->
+			<div id="" class="left-side">
+				<iframe name="details" src="" width="90%" height="300px" frameborder="no"></iframe>
+			</div>
+			<!--左侧end-->
+			<!--注册信息主体start-->
+			<div id="" class="info-body">
+				<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">立即填写</button>
+				<div id="myModal" class="modal fade">
+					<div class="modal-dialog">
+						<form role="form" class="form-horizontal" id="registerForm" action="success.html" method="get" autocomplete="on">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">注册信息填写</h4>
+								</div>
+								<div id="" class="modal-body">
+									<div class="form-group">
+										<label for=" profile" class="col-lg-4 control-label">头&emsp;&emsp;像：</label>
+
+										<div class="col-lg-5">
+											<input type="file" class="form-control" name="profile" id="profile" value="" multiple="multiple" required="required" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="username" class="col-lg-4 control-label">姓&emsp;&emsp;名：</label>
+										<div class="col-lg-5">
+											<input class="form-control" type="text" id="username" name="username" placeholder="请输入你的姓名" required="required" />
+										</div>
+										<div id="" class="col-lg-3">
+											<span id="namePrompt"></span>
+										</div>
+									</div>
+									<div class="form-group">
+										<!--对单选框无效-->
+										<label for="sexm" class="col-lg-4 control-label">性&emsp;&emsp;别：</label>
+										<div id="" class="col-lg-5">
+											<label class="radio-inline">
+												<input  type="radio" name="sex" id="sexmale" value="男" />男
+											</label>
+											<label class="radio-inline">
+												<input  type="radio" name="sex" id="sexfemale" value="女" checked="checked" />女
+											</label>
+
+										</div>
+
+									</div>
+									<div id="" class="form-group">
+										<!--对复选框无效-->
+										<label id="interest-lable" class="col-sm-4 control-label">兴&emsp;&emsp;趣：</label>
+										<div id="" class="col-sm-5">
+											<label class="checkbox-inline">
+												<input  type="checkbox" id="allCheck" value="" />全选
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="one" value="security" />网络安全
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="one" value="AI" />人工智能
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="one" value="IOT" />物联网
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="one" value="algorithm" />算法
+											</label>
+										</div>
+										<div id="" class="col-lg-3">
+											<span id="interestPrompt"></span>
+										</div>
+									</div>
+
+									<div id="" class="form-group">
+										<label for="pwd1" class="col-lg-4 control-label">密&emsp;&emsp;码：</label>
+										<div id="" class="col-lg-5">
+											<input class="form-control" type="password" id="pwd1" name="password1" placeholder="请输入密码" required="required" />
+										</div>
+										<div id="" class="col-lg-3">
+											<span id="pwdPrompt"></span>
+										</div>
+									</div>
+
+									<div id="" class="form-group">
+										<label for="pwd2" class="control-label col-lg-4">确认密码：</label>
+										<div id="" class="col-lg-5">
+											<input class="form-control" type="password" id="pwd2" name="password2" placeholder="请再次输入密码" required="required" />
+										</div>
+										<div id="" class="col-lg-3">
+											<span id="pwd2Prompt"></span>
+										</div>
+									</div>
+
+									<div id="" class="form-group">
+										<label for="telephone" class="col-lg-4 control-label">手&emsp;&emsp;机：</label>
+										<div id="" class="col-lg-5">
+											<input class="form-control" type="tel" name="telephone" id="telephone" value="" placeholder="请输入你的手机号"
+											 required="required" />
+										</div>
+										<div id="" class="col-lg-3">
+											<span id="phonePrompt"></span>
+										</div>
+									</div>
+
+									<div id="" class="form-group">
+										<label for="email" class="control-label col-lg-4">邮&emsp;&emsp;箱：</label>
+										<div id="" class="col-lg-5">
+											<input class="form-control" type="email" id="email" name="email" value="" placeholder="请输入邮箱" required="required" />
+										</div>
+										<div id="" class="col-lg-3">
+											<span id="emailPrompt"></span>
+										</div>
+									</div>
+
+									<div id="" class="form-group">
+										<label for="academy" class="col-lg-4 control-label">院&emsp;&emsp;校：</label>
+										<div id="" class="col-lg-5">
+											<input class="form-control" list="school" type="text" name="academy" id="academy" value="" required="required"
+											 placeholder="请输入你的学校" />
+										</div>
+										<div id="" class="col-lg-3">
+											<span id="schoolPrompt"></span>
+										</div>
+									</div>
+
+									<datalist id="school">
+										<option value="pku">北京大学</option>
+										<option value="tsu">清华大学</option>
+										<option value="ruc">人民大学</option>
+									</datalist>
+
+									<datalist id="specialize">
+										<option value="1">软件工程</option>
+										<option value="2">人工智能</option>
+										<option value="3">网络安全</option>
+										<option value="4">大数据</option>
+									</datalist>
+
+									<div id="" class="form-group">
+										<label for="major" class="col-lg-4 control-label">专&emsp;&emsp;业：</label>
+										<div id="" class="col-lg-5">
+											<input class="form-control" list="specialize" type="text" name="major" id="major" value="" placeholder="请输入你的专业"
+											 required="required" />
+										</div>
+										<div id="" class="col-lg-3">
+											<span id="specializePrompt"></span>
+										</div>
+									</div>
+
+									<div id="" class="form-group">
+										<label for="region" class="col-lg-4 control-label">参赛地区：</label>
+										<div id="" class="col-lg-5">
+											<!-- required对select无用 -->
+											<select class="form-control" id="province" name="" required="required">
+												<option value=" -1">---请选择省份---</option>
+												<option value="0">安徽省</option>
+												<option value="1">江苏省</option>
+												<option value="2">北京</option>
+												<option value="3">四川省</option>
+											</select>
+											<select class="form-control" name="" id="city" required="required">
+												<option value="-1">--请先选择省份--</option>
+											</select>
+										</div>
+										<div id="" class="col-lg-3">
+											<span id="cityPrompt">
+											</span>
+										</div>
+
+									</div>
+									<div id="" class="form-group">
+										<label class="control-label col-lg-10">我们正在征集下次比赛时间，请进行投票选择：</label>
+									</div>
+									<br>
+
+									<div id="" class="col-lg-5 ">
+										<input class="form-control" type="date" name="nextMatchDate" id="nextMatchDate" value="" required="required" />
+									</div>
+									<textarea class="form-control" rows="10" cols="30" readonly="readonly" class="rule">参赛规则：请仔细阅读参赛的详细规则，并确你并不会违反相关规定。。。。。。。。
+										</textarea>
+									<!-- <input type="image" name="submit" id="submit" value="" src="img/submit.jpg" width="10%" height="10%" /> -->
+									<input type="checkbox" name="" id="agree" value="" />我已知晓该规定
+
+								</div>
+								<div id="" class="modal-footer">
+									<input type="submit" value="提交" class="btn btn-info btn-sm" />
+									<input type="reset" value="重置" class="btn btn-warning btn-sm" />
+									<!-- <button type="button" class="btn btn-info" data-dismiss="modal">关闭</button> -->
+									<br/>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+			<!--注册信息主体end-->
+		</div>
+		<!--注册信息界面end-->
+		<!--footer start-->
+		<div id="" class="footer">
+			<div id="" class="contact">
+				<ul class="footer-ul">
+					<li><a href="#">关于我们</a></li>
+					<li class="spilt">|</li>
+					<li><a href="#">联系我们</a></li>
+					<li class="spilt">|</li>
+					<li><a href="#">网站地图</a></li>
+					<li class="spilt">|</li>
+					<li><a href="#">网站声明</a></li>
+				</ul>
+			</div>
+			<div id="" class="copyright clear">
+				Copyright 2021 sue & hh All Rights Reserved hh&copy;版权所有 备案号：XXXX
+			</div>
+		</div>
+		<!--footer end-->
+	</body>
+
+</html>

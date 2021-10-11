@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>随机点名器</title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			a{
+				text-decoration: none;
+				color: #333333;
+			}
+			a:hover{
+				color: #00FFFF;
+			}
+			.bg-color{
+				height: 220px;
+				width: 360px;
+				background-color: orange;
+				margin-left: 750px;
+				margin-top: 200px;
+				padding-top: 60px;
+				padding-left: 60px;
+				border-radius: 15px;
+			}
+			.name-div{
+				background-color: #999999;
+				width: 245px;
+				height: 70px;
+				line-height: 70px;
+				border-radius: 15px;
+				text-align: center;
+				font-size: 45px;
+				margin-bottom: 30px;
+			}
+			span{
+				text-align: center;
+			}
+			.btn-div{
+				width: 245px;
+				padding-left: 90px;
+			}
+			button{
+				border-radius: 5px;
+				border: none;
+				width: 60px;
+				height: 30px;
+				background-color: greenyellow;
+			}
+		</style>
+		<script type="text/javascript">
+			var names=["cc","hl","fxt","zyf","nhx","ldl","hyy","rmj","bcj"];
+			var time=null;
+			var index=0;
+			function start(){
+				var name=document.getElementById("name");
+				var btnStart=document.getElementById("btn-start");
+				var btnStop=document.getElementById("btn-stop");
+				btnStart.style.display="none";
+				btnStop.style.display="inline";
+				btnStop.style.backgroundColor="red";
+				var num=names.length;
+				if(index==num){
+					index=0;
+				}
+				name.innerHTML=names[index];
+				index++;
+			}
+			
+			function stop(){
+				var btnStart=document.getElementById("btn-start");
+				var btnStop=document.getElementById("btn-stop");
+				clearInterval(time);
+				btnStop.style.display="none";
+				btnStart.style.display="inline";
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div id="" class="bg-color">
+			<div id="" class="name-div">
+				<span id="name">随机点名</span>
+			</div>
+			<div id="" class="btn-div">
+				<button type="button" id="btn-start" onclick='javascript:time=setInterval("start()",100);'>开始</button>
+			</div>
+			<div id="" class="btn-div">
+				<button type="button" id="btn-stop" style="display: none;" onclick="stop()">停止</button>
+			</div>
+		</div>
+	</body>
+</html>

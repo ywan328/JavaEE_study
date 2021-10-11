@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>城市级联</title>
+
+</head>
+
+<body>
+	<!-- onchange="changecity(this.value)" -->
+	<select name="" id="province">
+		<option>---请选择省份---</option>
+		<option value="0">安徽省</option>
+		<option value="1">江苏省</option>
+		<option value="2">北京</option>
+		<option value="3">四川省</option>
+	</select>
+	<select name="" id="city">
+
+	</select>
+</body>
+
+</html>
+<script src="js/jquery-1.11.1.js"></script>
+<script>
+	var citylist = new Array();
+	citylist[0] = new Array("铜陵市", "邢台市", "蚌埠市", "合肥市");
+	citylist[1] = new Array("南京市", "苏州市", "常州市", "镇江市");
+	citylist[2] = new Array("朝阳区", "大兴区", "海淀区", "东城区", "西城区");
+	citylist[3] = new Array("凉州自治州", "成都市", "攀枝花市", "绵阳市", "自贡市");
+	// function changecity(val){
+	// 	var city = document.getElementById("city");
+	// 	//先清空列表，不然会堆加
+	// 	city.options.length=0;
+	// 	for(var i=0;i<citylist[val].length;i++){
+	// 		var option=document.createElement("option");
+	// 		option.innerHTML=citylist[val][i];
+	// 		option.value=citylist[val][i];
+	// 		city.appendChild(option);
+	// 	}
+	// }
+
+	//注意引入jquery
+	//注意命名
+	$(function () {
+		$("#province").change(function () {
+			var city = $("#city");
+			city.html("");
+			var cityArray = citylist[$(this).val()];
+			var str = "";
+			for (var i = 0; i < cityArray.length; i++) {
+				//值不用加引号，直接拼接
+				str += "<option value=" + cityArray[i] + ">" + cityArray[i] + "</option>";
+			}
+			city.html(str);
+		});
+	});
+</script>

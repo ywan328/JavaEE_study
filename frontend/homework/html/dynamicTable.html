@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>动态表格</title>
+	<style type="text/css">
+		th,
+		td {
+			padding: 10px;
+		}
+	</style>
+	<script src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		// ---------------------
+		// function traverse(){
+		// 	//获取表格对象
+		// 	var tab=document.getElementById("dynamicTable");
+		// 	//获取所有行的数组
+		// 	var rowArray=tab.rows;
+		// 	//遍历行
+		// 	for(var i=0;i<rowArray.length;i++){
+		// 		//获取某一行
+		// 		var singlerow=rowArray[i];
+		// 		//获取某一行的单元格数组
+		// 		var cells=singlerow.cells;
+		// 		var str="";
+		// 		//遍历单元格
+		// 		for(var j=0;j<cells.length;j++){
+		// 			//获取某行的单个单元格
+		// 			var cell=cells[j];
+		// 			//获取单元格文本，内部直接获取，包括标签
+		// 			var text=cell.innerHTML;
+		// 			//获取单元格下标
+		// 			var index=cell.cellIndex;
+		// 			str+=index+"列:"+text+".";
+		// 		}
+		// 		//获取行下标
+		// 		console.log(singlerow.rowIndex+"行"+str);
+		// 	}
+		// }
+		// function addRow(){
+		// 	var table=document.getElementById("dynamicTable");
+		// 	//添加行
+		// 	var newRow=table.insertRow();
+		// 	//添加列
+		// 	var newCol1=newRow.insertCell();
+		// 	var newCol2=newRow.insertCell();
+		// 	var newCol3=newRow.insertCell();
+		// 	var newCol4=newRow.insertCell();
+		// 	var newCol5=newRow.insertCell();
+		// 	//生成随机数
+		// 	var num = parseInt(Math.random()*10)+1;
+		// 	//赋值
+		// 	newCol1.innerHTML=num;
+		// 	newCol2.innerHTML="胡蕾饼干"+num;
+		// 	newCol3.innerHTML="￥78";
+		// 	newCol4.innerHTML="916";
+		// 	newCol5.innerHTML='<button type="button" onclick="deleteRow(this)">删除</button>';
+		// }
+		// function deleteRow(btn){
+		// 	var table=document.getElementById("dynamicTable");
+		// 	//获取行的索引；此处为删除按钮的父的父为<tr>标签
+		// 	var index=btn.parentNode.parentNode.rowIndex;
+		// 	//删除行
+		// 	table.deleteRow(index);
+		// }
+
+
+
+		$(function () {
+			//绑定事件
+			$("#traverseTable").click(function () {
+				//获取表格
+				var tab = $("#dynamicTable");
+				//获取表格下的tr，默认浏览器会加<tbody>所以，往下两层
+				var trArr = tab.children().children();
+				//遍历行
+				for (var i = 0; i < trArr.length; i++) {
+					//获取一行
+					var singlerow = $(trArr[i]);
+					//获取每行的所有列
+					var tdArr = $(singlerow.children());
+					var str = "";
+					//遍历列
+					for (var j = 0; j < tdArr.length; j++) {
+						//获取某一列
+						var td = $(tdArr[j]);
+						//获取html
+						var html = td.html();
+						str += html;
+					}
+					console.log(str);
+				}
+			});
+			$("#addRow").click(function(){
+				var tab=$("#dynamicTable");
+				var num=parseInt(Math.random()*10)+1;
+				var tr='<tr>'+
+					'<td>'+num+'</td>'+
+					'<td>胡蕾饼干'+num+'</td>'+
+					'<td>￥99</td>'+
+					'<td>9</td>'+
+					'<td><button type="button" name="delBtn">删除</button></td>'+
+				'</tr>';
+				tab.append(tr);
+			});
+			//删除
+			$(document).on("click","button[name='delBtn']",function(){
+				//谁调用this就是谁
+				$(this).parent().parent().remove();
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!-- onclick="traverse()" -->
+	<button type="button" id="traverseTable">遍历表格</button>
+	<!-- onclick="addRow()" -->
+	<button type="button" id="addRow">添加</button>
+	<table id="dynamicTable" border="1" cellspacing="0" cellpadding="0" width="90%" style="text-align: center;">
+		<tr>
+			<th>序号</th>
+			<th>名称</th>
+			<th>单价</th>
+			<th>数量</th>
+			<th>操作</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>胡蕾饼干</td>
+			<td>￥99</td>
+			<td>1</td>
+			<!-- onclick="deleteRow(this)" -->
+			<td><button type="button" name="delBtn">删除</button></td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>胡蕾饼干2</td>
+			<td>￥992</td>
+			<td>121</td>
+			<!-- onclick="deleteRow(this)" -->
+			<td><button type="button" name="delBtn">删除</button></td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>胡蕾饼干3</td>
+			<td>￥993</td>
+			<td>12</td>
+			<!-- onclick="deleteRow(this)" -->
+			<td><button type="button" name="delBtn">删除</button></td>
+		</tr>
+	</table>
+</body>
+
+</html>
