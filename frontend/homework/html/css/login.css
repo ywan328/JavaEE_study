@@ -1,0 +1,49 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:hover{
+	color: #00FFFF;
+	text-decoration: none;
+}
+.bgimg{
+	width: 100%;
+	height: 180px;
+	background-image: url(../img/login_bg.gif);
+}
+.loginDiv{
+	background-image: url(../img/login_bg.gif);
+	width: 100%;
+	height: 700px;
+	/* background-color: #00FFFF; */
+	padding-left: 750px;
+}
+.footer{
+	background-image: url(../img/login_bg.gif);
+	/* background-color: red; */
+	width: 100%;
+	height: 95px;
+	text-align: center;
+}
+.loginBox{
+	width: 400px;
+	height: 300px;
+	/* background-color: darkorange; */
+	background-image: url(../img/login_box_border.png);
+	padding-top: 10px;
+}
+label{
+	padding: 10px 30px;
+}
+.remember{
+	padding-left: 30px;
+}
+.forgot{
+	padding-left: 310px;
+}
+
